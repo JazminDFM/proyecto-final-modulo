@@ -6,7 +6,7 @@ nav{
 	border:2px solid black;
 	position:fixed;
 	right:0;
-	margin: 10px 0 0 20px;
+	margin: 10px 20px 0 0;
 }
 nav ul{
 	width:500px;
@@ -31,6 +31,7 @@ nav ul{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: center;
+    align-items: center;
 }
 .imagen{
 	width: 40%;
@@ -42,7 +43,7 @@ nav ul{
     height: 60%;
     border: 2px solid black;
 }
-.boton{
+.personaje{
 	display: flex;
     position: relative;
     border: 2px solid blue;
@@ -51,8 +52,16 @@ nav ul{
     align-items: center;
     justify-content: center;
 }
+.boton{
+	display: flex;
+    position: relative;
+    border: 2px solid blue;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
 button{
 	border: 2px solid green;
-    width: 300px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 }
