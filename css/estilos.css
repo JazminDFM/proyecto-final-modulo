@@ -33,22 +33,18 @@ nav ul{
     align-content: center;
     align-items: center;
 }
-.imagen{
+.cuerpo div:first-child,
+div:nth-child(2){
 	width: 40%;
     height: 60%;
     border: 2px solid black;
 }
-.texto{
-	width: 40%;
-    height: 60%;
-    border: 2px solid black;
-}
-.personaje{
+span{
 	display: flex;
     position: relative;
     border: 2px solid blue;
     height: 20%;
-    top: 71%;
+    top: 70%;
     align-items: center;
     justify-content: center;
 }

@@ -1,0 +1,67 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+nav{
+	border:2px solid black;
+	position:fixed;
+	right:0;
+	margin: 10px 20px 0 0;
+}
+nav ul{
+	width:500px;
+	display:flex;
+	justify-content: space-evenly;
+	list-style:none;
+}
+.home{
+	display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    width: 40px;
+    height: 40px;
+    margin: 20px 0 0 20px;
+    justify-content: center;
+    align-content: center;
+}
+.cuerpo{
+	display:flex;
+	border: 2px solid red;
+    height: 100vh;
+    align-content: center;
+}
+.titulo,
+.texto,
+.imagen,
+.menu-carrusel {
+    width: calc(33.33% - 20px); /* Ajustar el ancho de cada columna */
+    margin: 10px; /* Añadir espaciado entre las columnas */
+}
+
+.titulo {
+    text-align: center; /* Centrar el texto del título */
+}
+
+.texto {
+    text-align: center; /* Centrar el texto del párrafo */
+}
+
+.imagen {
+    border: 2px solid violet;
+}
+
+.menu-carrusel {
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-carrusel ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-carrusel ul li {
+    margin-bottom: 10px;
+}
