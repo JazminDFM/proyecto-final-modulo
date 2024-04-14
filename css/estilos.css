@@ -2,17 +2,38 @@
 	margin: 0;
 	padding: 0;
 }
+body{
+    min-height: 100vh;
+}
+header{
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+h1{
+    font-weight: 400;
+    color: #ef4135;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0 10px;
+}
+h1 a{
+    text-decoration: none;
+}
 nav{
-	border:2px solid black;
-	position:fixed;
-	right:0;
-	margin: 10px 20px 0 0;
+    width: 400px;
 }
 nav ul{
-	width:500px;
-	display:flex;
-	justify-content: space-evenly;
-	list-style:none;
+    list-style: none;
+    display: flex;
+}
+nav li{
+    flex-grow: 1;
+}
+header nav li a{
+    text-transform: lowercase;
+    text-decoration: none;
 }
 .home{
 	display: flex;
@@ -26,12 +47,15 @@ nav ul{
 }
 .cuerpo{
 	border: 2px solid red;
-    height: 100vh;
+    height: 95vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: center;
     align-items: center;
+}
+.cuerpo h1{
+    padding: 0;
 }
 .cuerpo div:first-child,
 div:nth-child(2){
