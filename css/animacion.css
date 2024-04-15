@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(329deg, #ffffff, #8cccff, #f8cdff, #83f1ff);
+    animation: animate 15s ease infinite;
+    background-size: 400% 400%;
+}
+#animacion{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+#animacion div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    width: 400px;
+}
+img{
+    height: 100%;
+    display: none;
+    opacity: 0;
+    transform-origin: center;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.gem{
+    display: block;
+    height: 100%;
+    opacity: 1;
+    animation: aparecer 1.7s ease forwards;
+}
+
+
+@keyframes animate {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+@keyframes aparecer {
+    from {
+      opacity: 0;
+      transform: rotateY(-90deg); /* Gira -90 grados hacia la izquierda */
+    }
+    to {
+      opacity: 1;
+      transform: rotateY(0deg); /* Sin rotación */
+    }
+  }
