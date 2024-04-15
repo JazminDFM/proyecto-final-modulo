@@ -4,6 +4,9 @@
 }
 body{
     min-height: 100vh;
+    background: linear-gradient(329deg, #ffffff, #8cccff, #f8cdff, #83f1ff);
+    animation: animate 15s ease infinite;
+    background-size: 400% 400%;
 }
 header{
     position: static;
@@ -55,8 +58,10 @@ header nav li a{
 .galeria a,
 .galeria img{
     display: block;
+    border-radius: 5%;
     width: 100%;
-    height: 100%; 
+    height: 100%;
+    box-shadow: 0px 0px 8px 15px rgba(255, 255, 255, 0.3); 
 }
 .modal{
 	position:fixed;
@@ -64,13 +69,21 @@ header nav li a{
 	left:0;
 	width:100%;
 	height:100vh;
-	background-color:rgba(0, 0, 0, 0.6);
+    background: linear-gradient(135deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 	display:none;
 	justify-content:space-evenly;
 	align-items:center;
 }
 .visible{
 	display:flex;
+}
+.modal img{
+    border-radius: 5%;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 .modal button{
 	-webkit-appearance:none;
@@ -79,4 +92,16 @@ header nav li a{
 	background-color:transparent;
 	font-size:6em;
 	color:white;
+}
+
+@keyframes animate {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
 }

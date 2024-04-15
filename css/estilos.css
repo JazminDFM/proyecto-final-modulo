@@ -4,6 +4,9 @@
 }
 body{
     min-height: 100vh;
+    background: linear-gradient(329deg, #ffffff, #8cccff, #f8cdff, #83f1ff);
+    animation: animate 15s ease infinite;
+    background-size: 400% 400%;
 }
 header{
     position: static;
@@ -84,4 +87,16 @@ button{
 	border: 2px solid green;
     width: 100px;
     height: 100px;
+}
+
+@keyframes animate {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
 }
