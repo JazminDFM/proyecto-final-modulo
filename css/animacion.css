@@ -1,60 +1,77 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
-    height: 100vh;
+
+#background-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(329deg, #ffffff, #8cccff, #f8cdff, #83f1ff);
     animation: animate 15s ease infinite;
     background-size: 400% 400%;
 }
-#animacion{
+
+@keyframes animate {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.page-container {
+    position: relative; 
+    z-index: 1; 
+    opacity: 1; /* Opacidad inicial */
+    transition: opacity 2.5s ease; /* Transición de opacidad más larga */
+}
+
+.page-loaded .page-container {
+    opacity: 0; 
+}
+
+#animacion {
     display: flex;
-    height: 100vh;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
-#animacion div{
+
+#animacion div {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 250px;
     width: 400px;
 }
-img{
+
+img {
     height: 100%;
     display: none;
     opacity: 0;
     transform-origin: center;
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
-.gem{
+
+.gem {
     display: block;
     height: 100%;
     opacity: 1;
     animation: aparecer 1.7s ease forwards;
 }
 
-
-@keyframes animate {
-    0%{
-        background-position: 0 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0 50%;
-    }
-}
-
 @keyframes aparecer {
     from {
-      opacity: 0;
-      transform: rotateY(-90deg); /* Gira -90 grados hacia la izquierda */
+        opacity: 0;
+        transform: rotateY(-90deg); /* Gira -90 grados hacia la izquierda */
     }
     to {
-      opacity: 1;
-      transform: rotateY(0deg); /* Sin rotación */
+        opacity: 1;
+        transform: rotateY(0deg); /* Sin rotación */
     }
-  }
+}

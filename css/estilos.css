@@ -15,6 +15,18 @@ header{
     align-items: center;
     padding: 20px;
 }
+header div,
+a{
+    display: block;
+    width: 60px;
+}
+
+header div img {
+    display: block;
+    height: 100%;
+    width: 100%; /* Agrega 'px' para especificar la unidad de medida */
+}
+
 h1{
     font-weight: 400;
     color: #ef4135;

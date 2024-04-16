@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
 //Galeria
 const enlaces = document.querySelectorAll(".galeria a");
 const modal = document.querySelector(".modal");
@@ -21,7 +22,7 @@ const imgModal = document.querySelector(".modal img");
 const navegacionImg = document.querySelectorAll(".modal button");
 let imgActual = 0;
 
-//Enlace viene a ser como la i en un for
+
 enlaces.forEach((enlace, indice) => {
 	enlace.addEventListener("click", evento => {
 		evento.preventDefault();
