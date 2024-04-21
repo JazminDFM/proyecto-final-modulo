@@ -52,7 +52,7 @@ header nav li a{
     display: grid;
     grid-template-columns: repeat(4, auto);
     gap: 100px;
-    margin: 300px 50px 100px;
+    margin: 200px 50px 100px;
 
 }
 .galeria a,
