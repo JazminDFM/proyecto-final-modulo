@@ -89,6 +89,28 @@ header nav li a{
     transition:filter 0.7s ease;
 }
 
+/* Estilos para el confeti */
+.confeti {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: confeti-fall 3s linear infinite;
+}
+
+.hide-confeti {
+    display: none;
+}
+
+/* Animación para el confeti */
+@keyframes confeti-fall {
+    0% {
+        transform: translateY(-100vh) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
 @keyframes animate {
     0%{
         background-position: 0 50%;
