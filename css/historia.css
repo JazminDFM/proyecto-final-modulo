@@ -45,57 +45,47 @@ header nav li a{
     text-decoration: none;
     color: #ea5c5c;
 }
+
 .cuerpo{
     height: 93vh;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-content: center;
     align-items: center;
     background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), repeating-linear-gradient( #fdefd955, #fdefd9 );
 }
-.cuerpo div:first-child{
-	width: 400px;
-    height: 800px;
-    transition: 1s;
-}
-
-.cuerpo div:first-child:hover{
-    transform: scale(1.3);
-    z-index: 2;
-    filter: drop-shadow(7px 10px 20px #ea5c5c);
-}
-.cuerpo .texto{
-    width: 40%;
+.cuerpo .story{
+    width: 980px;
+    height: 900px;
+    margin-right: 200px;
     border: 2px solid #f1d1d1;;
     background-color: rgba(238, 215, 215, 0.5);
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 2em;
+}
+
+.cuerpo .story h1{
+    font-size: 13em;
     color: #ea5c5c;
+    margin-left: 20px;
 }
-.cuerpo div p{
-    margin: 20px;
+
+.cuerpo .story p{
+    font-size: 2em;
+    margin: 0 20px 0;
+    color: #6d4c41;
 }
-.cuerpo div img{
-    display: block;
-    height: 100%;
-    width: 100%;
-}
-.cuerpo span a{
-    display: flex;
-    width: 200px;
-    height: 50px;
-    color: #3089b2;
-    justify-content: center;
-    align-items: center;
-}
-span{
-    margin-bottom:20px;
-    border-radius: 20px;
-    background-color: #ffffff8c;
+
+.cookie{
+    border: none;
+    width: 260px; 
+    height: 200px; 
+    background-image: url('../img/cookie.png');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    background-color: transparent;
+    filter: drop-shadow(7px 10px 20px #E68);
 }
 
 @keyframes animate {
