@@ -92,6 +92,7 @@ header nav li a{
 	background-color:transparent;
 	font-size:6em;
 	color:white;
+    cursor: pointer;
 }
 
 @keyframes animate {

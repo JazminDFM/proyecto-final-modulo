@@ -10,6 +10,7 @@ body{
     background: linear-gradient(329deg, #ffffff, #8cccff, #f8cdff, #83f1ff);
     animation: animate 13s ease infinite;
     background-size: 400% 400%;
+    overflow: hidden;
 }
 header{
     position: static;
