@@ -64,20 +64,32 @@ header nav li a{
     justify-content: center;
     font-size: 6em;
     width: 30%;
-    border: 2px solid violet;
+    padding-left: 20px;
+    color: #fa7bc1;
+    margin-bottom: 20px;
 }
-.pearl h1,
-.amethyst h1,
-.garnet h1{
+.cuerpoP h1,
+.cuerpoG h1{
     font-size: 5em;
+    color:#fdaeb9;
+}
+.cuerpoA h1{
+    color: #b898cc;
+}
+.cuerpoG h1{
+    color:#96005e;
 }
 .cuerpo .texto{
 	width: 30%;
     height: 60%;
-    border: 2px solid black;
+    border: 2px solid #f1d1d1;;
+    background-color: rgba(238, 215, 215, 0.5);
+    border-radius: 20px;
+    color: #6d4c41;
 }
 .cuerpo .texto p{
     font-size: 2em;
+    margin: 10px 20px 10px;
 }
 .cuerpo .imagen img {
     display: block;
@@ -91,6 +103,7 @@ header nav li a{
 .cuerpo .garnet{
     width: 800px;
     height: 860px;
+    margin-left: 100px;
 }
 
 .botones {
