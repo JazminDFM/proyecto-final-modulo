@@ -1,17 +1,68 @@
-const cookie = document.querySelector(".cookie")
+const cookie = document.querySelector(".cookie");
+const botones = document.querySelectorAll(".botones img");
 
-function activarShake(){
-	cookie.style.animation = "shake 0.5s ease-in-out infinite";
+//Botones characters.html
+botones.forEach(boton => {
+    boton.addEventListener("mouseover", () => {
+        // Agregar estilos al pasar el ratón
+        if (!boton.classList.contains('selected')) {
+            aplicarEstilos(boton);
+        }
+    });
+
+    boton.addEventListener("mouseout", () => {
+        // Restablecer estilos al quitar el ratón
+        if (!boton.classList.contains('selected')) {
+            restablecerEstilos(boton);
+        }
+    });
+
+    boton.addEventListener("click", () => {
+        // Alternar la clase 'selected' al hacer clic en el botón
+        botones.forEach(otroBoton => {
+            if (otroBoton !== boton) {
+                otroBoton.classList.remove('selected');
+                restablecerEstilos(otroBoton);
+            }
+        });
+
+        boton.classList.toggle('selected');
+        if (boton.classList.contains('selected')) {
+            // Aplicar estilos cuando el botón está seleccionado
+            aplicarEstilos(boton);
+        } else {
+            // Restablecer estilos cuando el botón no está seleccionado
+            restablecerEstilos(boton);
+        }
+    });
+
+});
+
+function aplicarEstilos(elemento) {
+    elemento.style.opacity = "1";
+    elemento.style.filter = "drop-shadow(4px 8px 12px rgba(238, 102, 136, 1))";
+}
+
+function restablecerEstilos(elemento) {
+    elemento.style.opacity = "0.5";
+    elemento.style.filter = "none";
+}
+
+function scrollToSection(sectionClass) {
+    const section = document.querySelector('.' + sectionClass);
+    section.scrollIntoView({ behavior: 'smooth' });
+}
+
+// Boton de story.html
+cookie.addEventListener("mouseover", () => {
+    cookie.style.animation = "shake 0.5s ease-in-out infinite";
 	cookie.style.filter = "drop-shadow(7px 10px 20px rgba(238, 102, 136, 1))";
-}
+});
 
-function desactivarShake(){
-	cookie.style.animation = "float 2s ease-in-out infinite"; 
+cookie.addEventListener("mouseout", () => {
+    cookie.style.animation = "float 2s ease-in-out infinite"; 
 	cookie.style.filter = "none"; 
-}
-
-cookie.addEventListener("mouseover", activarShake);
-cookie.addEventListener("mouseout", desactivarShake);
+});
 
 
 let creandoConfeti = false;
