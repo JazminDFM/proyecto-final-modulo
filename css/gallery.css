@@ -57,7 +57,7 @@ header nav li a{
     display: grid;
     grid-template-columns: repeat(4, auto);
     gap: 100px;
-    margin: 200px 50px 100px;
+    margin: 100px 50px 100px;
 
 }
 .galeria a,
@@ -87,17 +87,22 @@ header nav li a{
 	display:flex;
 }
 .modal img{
+    height: 50%;
+    object-fit: contain;
     border-radius: 5%;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 .modal button{
-	-webkit-appearance:none;
-	appearance:none;
-	border:none;
-	background-color:transparent;
-	font-size:6em;
-	color:white;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background-color: #0000008c;
+    font-size: 6em;
+    color: white;
+    width: 80px;
+    height: 100px;
     cursor: pointer;
+    border-radius: 20%;
 }
 
 @keyframes animate {
@@ -119,6 +124,16 @@ header nav li a{
         gap: 60px;
         margin: 140px 50px 100px;
         justify-content: center;
+    }
+    .modal img{
+        width: 80%;
+        height: 30%;
+        object-fit: cover;
+    }
+    .modal button{
+        font-size: 3em;
+        width: 40px;
+        height: 70px;
     }
 }
     
@@ -182,6 +197,16 @@ header nav li a{
         gap: 60px;
         margin: 140px 50px 100px;
     }
+    .modal img{
+        width: 80%;
+        height: 25%;
+        object-fit: cover;
+    }
+    .modal button{
+        font-size: 3em;
+        width: 40px;
+        height: 70px;
+    }
 }
 
 
@@ -195,4 +220,14 @@ header nav li a{
         flex-direction: column;
         align-content: center;
 	}
+    .modal img{
+        width: 70%;
+        height: 15%;
+        object-fit: cover;
+    }
+    .modal button{
+        font-size: 3em;
+        width: 40px;
+        height: 70px;
+    }
 }
