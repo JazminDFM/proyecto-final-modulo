@@ -10,7 +10,6 @@ body{
     background: linear-gradient(329deg, #ffffff, #8cccff, #f8cdff, #83f1ff);
     animation: animate 13s ease infinite;
     background-size: 400% 400%;
-    overflow: hidden;
 }
 header{
     position: static;
@@ -46,16 +45,14 @@ header nav li a{
     text-decoration: none;
     color: #ea5c5c;
 }
-.home{
-	display: flex;
-    flex-wrap: wrap;
-    border: 2px solid black;
-    width: 40px;
-    height: 40px;
-    margin: 20px 0 0 20px;
-    justify-content: center;
-    align-content: center;
+
+.abrir, .cerrar{
+	display:none;
+    -webkit-appearance:none;
+	appearance:none;
+	background-color:transparent;
 }
+
 .galeria{
     display: grid;
     grid-template-columns: repeat(4, auto);
@@ -113,4 +110,89 @@ header nav li a{
     100%{
         background-position: 0 50%;
     }
+}
+
+@media  screen and (max-width:1000px){
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 60px;
+        margin: 140px 50px 100px;
+        justify-content: center;
+    }
+}
+    
+
+@media screen and (max-width:800px){
+	nav{
+		position:fixed;
+		top:-100vh;
+		left:0;
+		padding:20px;
+		width:calc(100% - 40px);
+		height:calc(100vh - 40px);
+		background-color:#ffffffe3;
+		transition:top 0.8s;
+	}
+	.desplegado{
+		top:0;
+	}
+	nav ul{
+		display:block;
+	}
+	nav a{
+		color:#ea5c5c;
+		font-size:2.5em;
+	}
+	/*El mismo efecto que hemos hecho antes pero ahora en la vertical*/
+	nav li:not(:first-child){
+		margin-top:20px;
+	}
+	nav li:not(:last-child){
+		margin-right:0;
+	}
+	.cerrar{
+		display:block;
+		position:absolute;
+		top:20px;
+		right:20px;
+		cursor:pointer;
+		color:#ea5c5c;
+		border:none;
+		font-size:2em;
+	}
+	.abrir{
+        border-radius: 5px;
+        display: block;
+        width: 45px;
+        padding: 5px 5px 0;
+        border: none;
+        cursor: pointer;
+        margin-right: 10px;
+	}
+	.abrir span{
+		display:block;
+		height:5px;
+		background-color:#ea5c5c;
+		margin-bottom:5px;
+	}
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 60px;
+        margin: 140px 50px 100px;
+    }
+}
+
+
+@media screen and (max-width:501px){ /*Ojo hay que poner el espacio entre and y los parentesis*/
+	.galeria{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 80%;
+        margin: 50px 50px 50px 40px;
+        flex-direction: column;
+        align-content: center;
+	}
 }
