@@ -172,8 +172,11 @@ header nav li a{
         margin-right: 20px;
         margin-right: 20px;
     }
+    .cuerpo .story h1{
+        font-size: 10em;
+    }
     .cuerpo .story p {
-        font-size: 20px;
+        font-size: 19px;
         margin: 0 20px 0;
         color: #6d4c41;
     }
@@ -182,10 +185,10 @@ header nav li a{
         position: absolute;
        }
     .cuerpo .story{
-        margin-top: 300px;
+        margin-top: 448px;
         width: 600px;
-        height: 650px;
-        margin-bottom: 60px;
+        height: 559px;
+        margin-bottom: 160px;
         margin-right: 0;
     }
 }
@@ -256,6 +259,9 @@ header nav li a{
     height: 650px;
     margin-bottom: 60px;
    }
+   .cuerpo .story p{
+    font-size: 19px;
+    } 
    .cuerpo .story h1{
     font-size: 10em;
    }
@@ -266,18 +272,26 @@ header nav li a{
         overflow: auto;
     }
     .cuerpo .story {
-        width: 500px;
-        height: 650px;
+        width: 440px;
+        height: 610px;
         border: 2px solid #f1d1d1;
         background-color: rgba(238, 215, 215, 0.5);
         border-radius: 20px;
         margin-right: 0;
         margin-bottom: 60px;
+        margin-top: 340px;
+    }
+    .cuerpo .story p{
+        font-size: 19px;
     }
     .cuerpo .story h1 {
         font-size: 9em;
         color: #ea5c5c;
         margin-left: 20px;
+    }
+    .cookie{
+        top: 170px;
+        position: absolute;
     }
 }
 
@@ -290,8 +304,8 @@ header nav li a{
         height: auto;
     }
     .cuerpo .story{
-        height: 700px;
-        width: 450px;
+        height: 820px;
+        width: 320px;
         margin-right: 0;
         margin-bottom: 60px;
     }
@@ -299,5 +313,9 @@ header nav li a{
         font-size: 9em;
         color: #ea5c5c;
         margin-left: 20px;
+    }
+    .cookie{
+        top: 170px;
+        position: absolute;
     }
 }
