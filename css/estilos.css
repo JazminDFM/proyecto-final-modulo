@@ -122,9 +122,6 @@ span{
     body{
         overflow: auto;
     }
-    .cuerpo{
-        height:auto;
-    }
     .cuerpo .texto{
         width: 80%;
         margin: 70px 0;
@@ -203,7 +200,6 @@ span{
     .cuerpo{
         flex-direction: column;
         flex-wrap: nowrap;
-        height: auto;
    }
     .cuerpo .texto{
         width: 80%;
@@ -238,7 +234,7 @@ span{
     .cuerpo{
         flex-direction: column;
         flex-wrap: nowrap;
-
+        height: auto;
     }
     .cuerpo .texto{
         width: 80%;
