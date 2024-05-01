@@ -46,6 +46,13 @@ header nav li a{
     text-decoration: none;
     color: #ea5c5c;
 }
+.abrir, .cerrar{
+	display:none;
+    -webkit-appearance:none;
+	appearance:none;
+	background-color:transparent;
+}
+
 .cuerpo{
     height: 93vh;
     display: flex;
@@ -108,5 +115,140 @@ span{
     }
     100%{
         background-position: 0 50%;
+    }
+}
+
+@media  screen and (max-width:1000px){
+    body{
+        overflow: auto;
+    }
+    .cuerpo{
+        height:auto;
+    }
+    .cuerpo .texto{
+        width: 80%;
+        margin: 70px 0;
+    }
+    .cuerpo div:first-child {
+        width: 40%;
+        height: 400px;
+        transition: 1s;
+        margin-top: 50px;
+    }
+    .cuerpo div img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+}
+
+@media screen and (max-width:800px){
+	nav{
+		position:fixed;
+		top:-100vh;
+		left:0;
+		padding:20px;
+		width:calc(100% - 40px);
+		height:calc(100vh - 40px);
+		background-color:#ffffffe3;
+		transition:top 0.8s;
+	}
+	.desplegado{
+		top:0;
+	}
+	nav ul{
+		display:block;
+	}
+	nav a{
+		color:#ea5c5c;
+		font-size:2.5em;
+	}
+	/*El mismo efecto que hemos hecho antes pero ahora en la vertical*/
+	nav li:not(:first-child){
+		margin-top:20px;
+	}
+	nav li:not(:last-child){
+		margin-right:0;
+	}
+	.cerrar{
+		display:block;
+		position:absolute;
+		top:20px;
+		right:20px;
+		cursor:pointer;
+		color:#ea5c5c;
+		border:none;
+		font-size:2em;
+	}
+	.abrir{
+        border-radius: 5px;
+        display: block;
+        width: 45px;
+        padding: 5px 5px 0;
+        border: none;
+        cursor: pointer;
+        margin-right: 10px;
+	}
+	.abrir span{
+		display:block;
+		height:5px;
+		background-color:#ea5c5c;
+		margin-bottom:5px;
+	}
+    body{
+        overflow: auto;
+    }
+    .cuerpo{
+        flex-direction: column;
+        flex-wrap: nowrap;
+   }
+    .cuerpo .texto{
+        width: 80%;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    .cuerpo div:first-child {
+        width: 40%;
+        height: 400px;
+        margin-top: 20px;
+        transition: 1s;
+    }
+    .cuerpo div img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+
+
+
+@media screen and (max-width:501px){ 
+    body{
+        overflow: auto;
+    }
+    .cuerpo{
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+    }
+    .cuerpo .texto{
+        width: 80%;
+        margin: 70px 0;
+    }
+    .cuerpo div:first-child {
+        width: 40%;
+        height: 400px;
+        margin-top: 20px;
+        transition: 1s;
+    }
+    .cuerpo div img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
     }
 }

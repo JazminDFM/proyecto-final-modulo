@@ -210,7 +210,7 @@ header nav li a{
 }
 
 
-@media screen and (max-width:501px){ /*Ojo hay que poner el espacio entre and y los parentesis*/
+@media screen and (max-width:501px){ 
 	.galeria{
         display: flex;
         flex-wrap: wrap;
