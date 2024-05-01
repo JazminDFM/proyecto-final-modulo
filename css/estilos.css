@@ -203,6 +203,7 @@ span{
     .cuerpo{
         flex-direction: column;
         flex-wrap: nowrap;
+        height: auto;
    }
     .cuerpo .texto{
         width: 80%;
@@ -223,7 +224,11 @@ span{
     }
 }
 
-
+@media screen and (max-width:700px){
+    .cuerpo{
+        height: auto;
+    }
+}
 
 
 @media screen and (max-width:501px){ 
