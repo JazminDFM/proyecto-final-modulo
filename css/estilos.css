@@ -175,6 +175,7 @@ span{
 		height:calc(100vh - 40px);
 		background-color:#ffffffe3;
 		transition:top 0.8s;
+        z-index: 1;
 	}
 	.desplegado{
 		top:0;
@@ -264,8 +265,9 @@ span{
     }
     .cuerpo .texto{
         width: 80%;
-        height: 850px;
+        height: 930px;
         margin: 70px 0;
+        margin-bottom: 80px;
     }
     .cuerpo div:first-child {
         width: 40%;

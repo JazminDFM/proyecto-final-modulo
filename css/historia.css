@@ -224,6 +224,7 @@ header nav li a{
 		height:calc(100vh - 40px);
 		background-color:#ffffffe3;
 		transition:top 0.8s;
+        z-index: 1;
 	}
 	.desplegado{
 		top:0;

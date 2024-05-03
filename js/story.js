@@ -1,5 +1,14 @@
 const cookie = document.querySelector(".cookie");
 const botones = document.querySelectorAll(".botones img");
+const navegacion = document.querySelector("nav");
+const menu = document.querySelectorAll(".abrir, .cerrar");
+
+//Menu desplegable
+menu.forEach( boton => {
+	boton.addEventListener("click", () => {
+		navegacion.classList.toggle("desplegado");
+	});
+});
 
 //Botones characters.html
 botones.forEach(boton => {
