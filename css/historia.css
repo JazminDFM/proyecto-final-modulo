@@ -159,18 +159,12 @@ header nav li a{
     }
 }
 
-@media  screen and (max-width:1600px){
+@media  screen and (max-width:1445px){
     body{
         overflow: auto;
     }
-    .cuerpo .story {
-        width: 600px;
-        height: 700px;
-        border: 2px solid #f1d1d1;
-        background-color: rgba(238, 215, 215, 0.5);
-        border-radius: 20px;
-        margin-right: 20px;
-        margin-right: 20px;
+    .cuerpo{
+        height: auto;
     }
     .cuerpo .story h1{
         font-size: 10em;
@@ -185,12 +179,39 @@ header nav li a{
         position: absolute;
        }
     .cuerpo .story{
-        margin-top: 448px;
+        margin-top: 380px;
         width: 600px;
         height: 559px;
-        margin-bottom: 160px;
+        margin-bottom: 360px;
         margin-right: 0;
     }
+}
+
+@media  screen and (max-width:900px){
+    body{
+        overflow: auto;
+    }
+    .cuerpo{
+        height: auto;
+    }
+    .cuerpo .story{
+        margin-bottom: 250px;
+    }
+    .cuerpo div:first-child {
+        width: 800px;
+        height:790px;
+        transition: 1s;
+        margin-top: 450px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .cuerpo div img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
 }
 
 @media screen and (max-width:800px){
@@ -253,11 +274,14 @@ header nav li a{
     top: 170px;
     position: absolute;
    }
+   .cuerpo{
+    height: auto;
+}
    .cuerpo .story{
     margin-top: 300px;
     width: 500px;
     height: 650px;
-    margin-bottom: 60px;
+    margin-bottom: 250px;
    }
    .cuerpo .story p{
     font-size: 19px;
@@ -271,6 +295,9 @@ header nav li a{
     body{
         overflow: auto;
     }
+    .cuerpo{
+        height: auto;
+    }
     .cuerpo .story {
         width: 440px;
         height: 610px;
@@ -278,11 +305,11 @@ header nav li a{
         background-color: rgba(238, 215, 215, 0.5);
         border-radius: 20px;
         margin-right: 0;
-        margin-bottom: 60px;
+        margin-bottom: 250px;
         margin-top: 340px;
     }
     .cuerpo .story p{
-        font-size: 19px;
+        font-size: 17.5px;
     }
     .cuerpo .story h1 {
         font-size: 9em;
@@ -305,12 +332,12 @@ header nav li a{
     }
     .cuerpo .story{
         height: 820px;
-        width: 320px;
+        width: 420px;
         margin-right: 0;
         margin-bottom: 60px;
     }
     .cuerpo .story h1 {
-        font-size: 9em;
+        font-size: 6em;
         color: #ea5c5c;
         margin-left: 20px;
     }
