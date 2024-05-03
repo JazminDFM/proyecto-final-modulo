@@ -47,6 +47,12 @@ header nav li a{
     text-decoration: none;
     color: #ea5c5c;
 }
+.abrir, .cerrar{
+	display:none;
+    -webkit-appearance:none;
+	appearance:none;
+	background-color:transparent;
+}
 
 .cuerpoS,
 .cuerpoP,
@@ -111,7 +117,6 @@ header nav li a{
     position: fixed;
     height: 100vh;
     right: 0;
-    z-index: 1;
     flex-direction: column;
     justify-content: center;
     margin-right: 50px;
@@ -146,3 +151,203 @@ button img{
         background-position: 0 50%;
     }
 }
+@media screen and (max-width:1000px){
+    .botones{
+        flex-direction: row;
+        right: auto;
+        margin-right: auto;
+        height: auto;
+        width: 100vw;
+        justify-content: space-around;
+    }
+    button{
+        width: 60px;
+        height: 80px;
+        margin-bottom: 0;
+    }
+    .cuerpoS,
+    .cuerpoP,
+    .cuerpoA,
+    .cuerpoG{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cuerpoS{
+        margin-top: 20px;
+    }
+    .cuerpo .steven,
+    .cuerpo .pearl,
+    .cuerpo .amethyst,
+    .cuerpo .garnet{
+        width: 200px;
+        height: 260px;
+        margin-left: 0;
+    }
+    .cuerpo h1{
+        width: 500px;
+        font-size: 3em;
+        padding: 0;
+    }
+    .cuerpo .texto{
+        width: 500px;
+        height: 450px;
+        margin-right: 20px;
+    }
+    .cuerpo .texto p {
+        font-size: 19px;
+    }
+    .cuerpo .imagen img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+@media screen and (max-width:800px){
+    nav{
+		position:fixed;
+		top:-100vh;
+		left:0;
+		padding:20px;
+		width:calc(100% - 40px);
+		height:calc(100vh - 40px);
+		background-color:#ffffffe3;
+		transition:top 0.8s;
+        z-index: 1;
+	}
+	.desplegado{
+		top:0;
+	}
+	nav ul{
+		display:block;
+	}
+	nav a{
+		color:#ea5c5c;
+		font-size:2.5em;
+	}
+	/*El mismo efecto que hemos hecho antes pero ahora en la vertical*/
+	nav li:not(:first-child){
+		margin-top:20px;
+	}
+	nav li:not(:last-child){
+		margin-right:0;
+	}
+	.cerrar{
+		display:block;
+		position:absolute;
+		top:20px;
+		right:20px;
+		cursor:pointer;
+		color:#ea5c5c;
+		border:none;
+		font-size:2em;
+	}
+	.abrir{
+        border-radius: 5px;
+        display: block;
+        width: 45px;
+        padding: 5px 5px 0;
+        border: none;
+        cursor: pointer;
+        margin-right: 10px;
+        margin-bottom: 0;
+	}
+	.abrir span{
+		display:block;
+		height:5px;
+		background-color:#ea5c5c;
+		margin-bottom:5px;
+	}
+    .botones{
+        flex-direction: row;
+        right: auto;
+        margin-right: auto;
+        height: auto;
+        width: 100vw;
+        justify-content: space-around;
+    }
+    button{
+        width: 60px;
+        height: 80px;
+        margin-bottom: 0;
+    }
+    .cuerpoS,
+    .cuerpoP,
+    .cuerpoA,
+    .cuerpoG{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cuerpoS{
+        margin-top: 20px;
+    }
+    .cuerpo .steven,
+    .cuerpo .pearl,
+    .cuerpo .amethyst,
+    .cuerpo .garnet{
+        width: 200px;
+        height: 260px;
+        margin-left: 0;
+    }
+    .cuerpo h1{
+        width: 400px;
+        font-size: 2em;
+        padding: 0;
+    }
+    .cuerpo .texto{
+        width: 350px;
+        height: 450px;
+    }
+    .cuerpo .texto p {
+        font-size: 18px;
+    }
+    .cuerpo .imagen img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+
+@media screen and (max-width:501px){
+    .cuerpoS,
+    .cuerpoP,
+    .cuerpoA,
+    .cuerpoG{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cuerpoS{
+        margin-top: 20px;
+    }
+    .cuerpo .steven,
+    .cuerpo .pearl,
+    .cuerpo .amethyst,
+    .cuerpo .garnet{
+        width: 200px;
+        height: 260px;
+        margin-left: 0;
+    }
+    .cuerpo h1{
+        width: 300px;
+        font-size: 1.5em;
+        padding: 0;
+    }
+    .cuerpo .texto{
+        width: 290px;
+        height: 450px;
+    }
+    .cuerpo .texto p {
+        font-size: 15px;
+    }
+    .cuerpo .imagen img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+} 

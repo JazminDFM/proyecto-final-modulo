@@ -64,8 +64,8 @@ header nav li a{
     background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), repeating-linear-gradient( #fdefd955, #fdefd9 );
 }
 .cuerpo .story{
-    width: 980px;
-    height: 900px;
+    width: 960px;
+    height: 765px;
     margin-right: 200px;
     border: 2px solid #f1d1d1;;
     background-color: rgba(238, 215, 215, 0.5);
@@ -79,7 +79,7 @@ header nav li a{
 }
 
 .cuerpo .story p{
-    font-size: 2em;
+    font-size: 1.7em;
     margin: 0 20px 0;
     color: #6d4c41;
 }
