@@ -10,11 +10,11 @@ menu.forEach( boton => {
 		navegacion.classList.toggle("desplegado");
         if (navegacion.classList.contains("desplegado")) {
             botonesNav.forEach(boton => {
-                boton.style.zIndex = '-1'; // Menú desplegado
+                boton.style.zIndex = '-1'; // Menú desplegado botones detras
             });
         } else {
             botonesNav.forEach(boton => {
-                boton.style.zIndex = '1'; // Menú cerrado
+                boton.style.zIndex = '1'; // Menú cerrado botones en su posicion original
             });
         }
     });
