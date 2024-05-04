@@ -2,12 +2,22 @@ const cookie = document.querySelector(".cookie");
 const botones = document.querySelectorAll(".botones img");
 const navegacion = document.querySelector("nav");
 const menu = document.querySelectorAll(".abrir, .cerrar");
+const botonesNav = document.querySelectorAll(".botones");
 
 //Menu desplegable
 menu.forEach( boton => {
 	boton.addEventListener("click", () => {
 		navegacion.classList.toggle("desplegado");
-	});
+        if (navegacion.classList.contains("desplegado")) {
+            botonesNav.forEach(boton => {
+                boton.style.zIndex = '-1'; // Menú desplegado
+            });
+        } else {
+            botonesNav.forEach(boton => {
+                boton.style.zIndex = '1'; // Menú cerrado
+            });
+        }
+    });
 });
 
 //Botones characters.html
@@ -73,7 +83,7 @@ cookie.addEventListener("mouseout", () => {
 	cookie.style.filter = "none"; 
 });
 
-
+//Creacion confeti :D
 let creandoConfeti = false;
 
 cookie.addEventListener("click", () => {
