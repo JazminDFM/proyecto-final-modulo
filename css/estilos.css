@@ -63,8 +63,8 @@ header nav li a{
     background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), repeating-linear-gradient( #fdefd955, #fdefd9 );
 }
 .cuerpo div:first-child{
-	width: 400px;
-    height: 800px;
+	width: 250px;
+    height: 600px;
     transition: 1s;
 }
 
@@ -83,6 +83,7 @@ header nav li a{
     align-items: center;
     font-size: 2em;
     color: #ea5c5c;
+    margin-bottom: 50px;
 }
 .cuerpo div p{
     margin: 20px;
@@ -91,6 +92,7 @@ header nav li a{
     display: block;
     height: 100%;
     width: 100%;
+    object-fit: contain;
 }
 .cuerpo span a{
     display: flex;
@@ -124,7 +126,7 @@ span{
     }
     .cuerpo .texto{
         width: 60%;
-        height: 500px;
+        height: 370px;
         font-size: 27px;
     }
     .cuerpo div:first-child {
@@ -143,6 +145,9 @@ span{
 @media  screen and (max-width:900px){
     body{
         overflow: auto;
+    }
+    .cuerpo{
+        height: auto;
     }
     .cuerpo .texto{
         width: 80%;

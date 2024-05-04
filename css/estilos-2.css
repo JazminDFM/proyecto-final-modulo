@@ -69,7 +69,7 @@ header nav li a{
     display: flex;
     justify-content: center;
     font-size: 4em;
-    width: 30%;
+    width: 600px;
     padding-left: 20px;
     color: #fa7bc1;
     margin-bottom: 20px;
@@ -86,15 +86,15 @@ header nav li a{
     color:#96005e;
 }
 .cuerpo .texto{
-    width: 700px;
-    height: 800px;
+    width: 550px;
+    height: 500px;
     border: 2px solid #f1d1d1;;
     background-color: rgba(238, 215, 215, 0.5);
     border-radius: 20px;
     color: #6d4c41;
 }
 .cuerpo .texto p{
-    font-size: 2em;
+    font-size: 19px;
     margin: 10px 20px 10px;
 }
 .cuerpo .imagen img {
@@ -107,8 +107,8 @@ header nav li a{
 .cuerpo .pearl,
 .cuerpo .amethyst,
 .cuerpo .garnet{
-    width: 800px;
-    height: 860px;
+    width: 500px;
+    height: 750px;
     margin-left: 100px;
 }
 
@@ -168,6 +168,44 @@ button img{
         padding: 0;
     }
     .cuerpo .texto{
+        width: 290px;
+        height: 470px;
+        margin-right: 20px;
+    }
+    .cuerpo .texto p {
+        font-size: 15px;
+    }
+    .cuerpo .imagen img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .cuerpo .steven,
+    .cuerpo .pearl,
+    .cuerpo .amethyst,
+    .cuerpo .garnet{
+        width: 300px;
+        height: 460px;
+        margin-left: 0;
+    }
+    .cuerpoG{
+        margin-bottom: 30px;
+    }
+    .cuerpo h1{
+        width: 300px;
+        font-size: 3em;
+        padding: 0;
+    }
+    .cuerpoS h1,
+    .cuerpoP h1
+    .cuerpoG h1{
+        font-size: 2.5em;
+    }
+    .cuerpo .texto{
         width: 390px;
         height: 470px;
         margin-right: 20px;
@@ -181,6 +219,7 @@ button img{
         width: 100%;
         object-fit: contain;
     }
+
 }
 
 @media screen and (max-width:1000px){
@@ -204,6 +243,9 @@ button img{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .cuerpoG{
+        margin-bottom: 30px;
     }
     .cuerpoS{
         margin-top: 20px;
@@ -360,8 +402,8 @@ button img{
     .cuerpo .pearl,
     .cuerpo .amethyst,
     .cuerpo .garnet{
-        width: 200px;
-        height: 260px;
+        width: 180px;
+        height: 230px;
         margin-left: 0;
     }
     .cuerpo h1{
