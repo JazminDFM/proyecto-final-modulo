@@ -68,6 +68,7 @@ header nav li a{
     height: 100%;
     box-shadow: 0px 0px 8px 15px rgba(255, 255, 255, 0.3); 
 }
+/*Cuando se abra la imagen el fondo aparecera distorsionado con un efecto blur*/
 .modal{
 	position:fixed;
 	top:0;
@@ -104,7 +105,7 @@ header nav li a{
     cursor: pointer;
     border-radius: 20%;
 }
-
+/*Fondo*/
 @keyframes animate {
     0%{
         background-position: 0 50%;
@@ -190,6 +191,7 @@ header nav li a{
 		height:5px;
 		background-color:#ea5c5c;
 		margin-bottom:5px;
+        border-radius: 5px;
 	}
     .galeria{
         display: grid;

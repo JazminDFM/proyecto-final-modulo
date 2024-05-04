@@ -53,7 +53,7 @@ header nav li a{
 	appearance:none;
 	background-color:transparent;
 }
-
+/*Contenedores de cada personaje*/
 .cuerpoS,
 .cuerpoP,
 .cuerpoA,
@@ -85,6 +85,7 @@ header nav li a{
 .cuerpoG h1{
     color:#96005e;
 }
+/*Contenedor de texto*/
 .cuerpo .texto{
     width: 550px;
     height: 500px;
@@ -103,6 +104,7 @@ header nav li a{
     width: 100%;
     object-fit: contain;
 }
+/*Tamaño de las imagenes de los personajes*/
 .cuerpo .steven,
 .cuerpo .pearl,
 .cuerpo .amethyst,
@@ -111,7 +113,7 @@ header nav li a{
     height: 750px;
     margin-left: 100px;
 }
-
+/*Posicion de los botones en la ventana*/
 .botones {
     display: flex;
     position: fixed;
@@ -121,7 +123,7 @@ header nav li a{
     margin-right: 50px;
     z-index: 1;
 }
-
+/*Configuracion de los botones*/
 button{
     -webkit-appearance: none;
     width: 80px;
@@ -131,7 +133,7 @@ button{
     cursor: pointer;
     border: none;
 }
-
+/*Imagen los botones*/
 button img{
     display: block;
     height: 100%;
@@ -331,6 +333,7 @@ button img{
 		height:5px;
 		background-color:#ea5c5c;
 		margin-bottom:5px;
+        border-radius: 5px;
 	}
     .botones{
         flex-direction: row;

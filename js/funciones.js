@@ -42,6 +42,7 @@ modal.addEventListener("click", () => {
 	modal.classList.remove("visible");
 })
 
+//Navegación por la galería
 navegacionImg.forEach((flecha, i) => {
 	flecha.addEventListener("click", evento => {
 		evento.stopPropagation();
